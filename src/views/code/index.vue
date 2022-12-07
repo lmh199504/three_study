@@ -5,6 +5,8 @@
             class="my-editor"
             v-model="code"
             :highlight="highlighter"
+            readonly
+            aria-disabled
             line-numbers></prism-editor>
     </div>
 </template>
@@ -22,3 +24,18 @@ const highlighter = (code: string) => {
     return highlight(code, languages.js)
 }
 </script>
+<style>
+.my-editor {
+    background: #2d2d2d;
+    color: #ccc;
+    font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px;
+    height: 300px;
+}
+
+.prism-editor__textarea:focus {
+    outline: none;
+}
+</style>
