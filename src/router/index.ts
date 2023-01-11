@@ -9,6 +9,9 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/line',
         name: 'Line',
+        meta: {
+            title: '线'
+        },
         component: () => import('@/views/line/index.vue')
     },
     {
@@ -20,6 +23,36 @@ const routes: Array<RouteRecordRaw> = [
         path: '/code',
         name: 'code',
         component: () => import('@/views/code/index.vue')
+    },
+    {
+        path: '/dayTwo',
+        name: 'DayTwo',
+        component: () => import('@/views/dayTwo/index.vue')
+    },
+    {
+        path: '/dayThree',
+        name: 'DayThree',
+        component: () => import('@/views/dayThree/index.vue')
+    },
+    {
+        path: '/dayFour',
+        name: 'dayFour',
+        component: () => import('@/views/dayFour/index.vue')
+    },
+    {
+        path: '/dayFive',
+        name: 'dayFive',
+        component: () => import('@/views/dayFive/index.vue')
+    },
+    {
+        path: '/day6',
+        name: 'day6',
+        component: () => import('@/views/day6/index.vue')
+    },
+    {
+        path: '/day7',
+        name: 'day7',
+        component: () => import('@/views/day7/index.vue')
     }
 ]
 
